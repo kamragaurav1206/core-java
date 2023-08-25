@@ -9,4 +9,5 @@ public class DoubleColonSample {
     test t = String::new;
 
 
+
 }

@@ -28,5 +28,6 @@ public class ListOutDuplicateNumber {
         System.out.println("Second way");
         Set<Integer> duplicateValues2 = new HashSet<>();
         list.stream().filter(e->!duplicateValues2.add(e)).collect(Collectors.toSet()).forEach(System.out::println);
+
     }
 }

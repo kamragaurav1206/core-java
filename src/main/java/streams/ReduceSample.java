@@ -14,7 +14,7 @@ The BiFunction takes two arguments of any type, and returns a result of any type
  */
 public class ReduceSample {
     public static void main(String[] args) {
-        /*List<String> stringList = new ArrayList<>();
+        List<String> stringList = new ArrayList<>();
         stringList.add("def");
         stringList.add("abc");
         stringList.add("xyz");
@@ -23,26 +23,26 @@ public class ReduceSample {
             return s+"----"+y;
         };
 
-        //stringList.stream().sorted().reduce((a,b)->a+","+b).ifPresent((s)->System.out.println("::"+s));
+        stringList.stream().sorted().reduce((a,b)->a+","+b).ifPresent((s)->System.out.println("::"+s));
         stringList.stream().sorted().reduce(binaryOperator).ifPresent((s)->System.out.println("::"+s));
 
-        *//*stringList.stream().sorted().reduce((a,b)->a+","+b);
-        stringList.stream().forEach(System.out::println);
-        stringList.stream().forEach((s)->System.out.println(s));
+        //stringList.stream().sorted().reduce((a,b)->a+","+b);
+        //stringList.stream().forEach(System.out::println);
+        //stringList.stream().forEach((s)->System.out.println(s));
         Consumer<String> consumer = (s)->{
             System.out.println("Hello :"+s);
         };
 
-        stringList.stream().forEach(consumer)*//*;
+        stringList.stream().forEach(consumer);
 
 
-*/
 
-        List<Integer> intList = new ArrayList<>();
+
+       /* List<Integer> intList = new ArrayList<>();
         intList.add(12);
         intList.add(10);
         intList.add(20);
-        intList.stream().reduce((a,b)->a+b).ifPresent(System.out::println);
+        intList.stream().reduce((a,b)->a+b).ifPresent(System.out::println);*/
 
 
     }

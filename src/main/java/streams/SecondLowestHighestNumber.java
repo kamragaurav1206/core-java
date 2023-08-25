@@ -15,7 +15,8 @@ public class SecondLowestHighestNumber {
         list.add(63);
         list.add(93);
 
-        int secondLowestHighestNumber=list.stream().sorted(Comparator.reverseOrder()).skip(1).findFirst().get();
+        int secondLowestHighestNumber=list.stream().sorted(Comparator.reverseOrder()).limit(2).sorted(Comparator.reverseOrder()).findFirst().get();
+        //int secondLowestHighestNumber=list.stream().sorted(Comparator.reverseOrder()).skip(1).findFirst().get();
         System.out.println(secondLowestHighestNumber);
 
     }

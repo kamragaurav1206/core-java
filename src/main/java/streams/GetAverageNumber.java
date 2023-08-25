@@ -13,6 +13,8 @@ public class GetAverageNumber {
         list.add(5);
         double d=list.stream().mapToInt(e->e).average().getAsDouble();
         System.out.println(d);
+        double dd=list.stream().mapToInt(e->e).average().getAsDouble();
+        System.out.println(dd);
 
     }
 }
